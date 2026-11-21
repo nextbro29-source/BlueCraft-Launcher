@@ -79,6 +79,7 @@ jobs:
           mkdir out
 
       - name: Build Release .apk
+        if: false
         run: |
           # Build the launcher
           gradle :app_pojavlauncher:assembleRelease
